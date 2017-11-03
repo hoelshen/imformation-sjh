@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,inital-scale=1,maxiumum-scale=1,user-scalable=no">
+	<title>Web开发</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<script type="text/javascript">
+        function toDou(n)
+        {
+	          if(n<10)
+	          {
+	            return '0'+n;
+	          }
+	          else
+	          {
+	            return ''+n;
+	          }
+
+        }
+        window.onload=function ()
+          {
+            var aImg=document.getElementsByTagName('img')
+            function tick()
+            {
+            var oDate=new Date();
+
+            var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
+
+             // alert(str);
+
+            for (var i = 0; i < aImg.length; i++)
+            {
+              aImg[i].src='img/'+str.charAt(i)+'.png';
+            }
+
+            }
+            setInterval(tick,1000);
+            tick();
+          };
+        </script>
+
+       <style type="text/css">
+       body{margin:0;padding:0;background:#fff;font-size:14px;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+         form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+
+         .footer{padding: 35px 0;background: #f3f3f3;text-align: center;border-top: 1px solid #e3e3e3;}
+         .footercontent{color: #bfbfbf;}
+
+         #tab1{
+          width: 800px;
+          height: 800px;
+          border: 5px solid #ccc;
+         }
+          #div2 img{width: 20px;height: 20px;}
+
+       @media screen and (max-width:767px)
+      {
+        .shenjunhong-col{text-align: center;}
+        .shenjunhong-col-1{width: 100%;}
+        .shenjunhong-col-2{width: 100%;}
+        .shenjunhong-col-3{width: 100%;}
+        .shenjunhong-col-4{width: 100%;}
+        .shenjunhong-col-5{width: 100%;}
+        .shenjunhong-col-6{width: 100%;}
+        .shenjunhong-col-7{width: 100%;}
+        .shenjunhong-col-8{width: 100%;}
+        .shenjunhong-col-9{width: 100%;}
+        .shenjunhong-col-10{width: 100%;}
+        .shenjunhong-col-11{width: 100%;}
+        .shenjunhong-col-12{width: 100%;}
+        .typographic{display: none;}
+        .photo{display: none}
+        .top{padding-bottom: 80px;}
+        .websitelink{display: none;}
+        .nav{float: none;margin-left: 20px;margin-right: 20px;}
+        .contentblock{margin-left: 40px;margin-right: 40px;min-height: 200px;}
+        .visiontitle{margin-top: 20px;}
+      }
+    </style>
+<body>
+
+<script src="./js/jquery.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript"></script>
+<script  src="http://files.cnblogs.com/files/leguan1314/js.js" color="47,135,193" opacity="0.8" count="200" zindex="-2"></script>
+
+
+<nav class="navbar navbar-default">
+	<a href="#" class="navbar-brand">Web开发</a>
+	<ul class="nav navbar-nav">
+		<li><a href="#HTML5">HTML5</a> </li>
+		<li><a href="#bootstrap">Bootstrap</a></li>
+		<li class="dropdown">
+			<a href="#JavaScript" data-toggle="dropdown">JavaScript<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="#JQuery">JQuery</a></li>
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a href="#Syxd" data-toggle="dropdown">使用心得<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="#Mac">Mac技术</a> </li>
+				<li><a href="#Pcjs">爬虫技术</a> </li>
+				<li><a href="#Myi">虚拟机技术</a> </li>
+				<li><a href="#Vps">vps搭载vpn技术</a> </li>
+				<li><a href="#Alfred">Alfred</a> </li>
+			</ul>
+	</ul>
+</nav>
+
+<div data-offset="-5" data-spy="scroll" style="padding: 0 10px;height: 200px;overflow: auto;position: relative;">
+	<h4 id="HTML5">HTM5</h4>
+	<p>标准通用标记语言下的一个应用html标准</p>
+	<h4 id="bootstrap">Bootstrap</h4>
+	<p>Bootstrap 简介
+		什么是 Bootstrap？
+		Bootstrap 是一个用于快速开发 Web 应用程序和网站的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的。
+	</p>
+	<h4 id="JQuery">JQuery</h4>
+	<p>jQuery 库可以通过一行简单的标记被添加到网页中。
+		jQuery 库 - 特性
+		jQuery 是一个 JavaScript 函数库。
+		jQuery 库包含以下特性：
+		HTML 元素选取
+		HTML 元素操作
+		CSS 操作
+		HTML 事件函数
+		JavaScript 特效和动画
+		HTML DOM 遍历和修改
+		AJAX
+		Utilities
+	</p>
+	<h4 id="Mac">Mac</h4>
+	<p>
+	Logic Pro
+		维基百科，自由的百科全书
+		Logic Pro
+		开发者	Apple Inc.
+		稳定版本	9.1.8（2012年10月24日，​4年前[1]）
+		操作系统	Mac OS X
+		类型	MIDI Sequencer + Digital Audio Workstation
+		许可协议	Proprietary
+		网站	www.apple.com/logicstudio/logicpro/
+		Logic Pro 是一款Mac平台的数字音频工作站于MIDI音序器软件。Logic Pro最早由德国软件开发商Emagic开发，并随着2002年苹果公司对Emagic的收购成为苹果的产品，并作为苹果的专业级音乐软件套装Logic Studio的一部分。
+		另一款消费级的音频软件Logic Express由Logic Pro缩减而来，与Logic Pro有相同的音频处理引擎和交互界面。作为随售出的Mac附赠的软件、iLife套件的一部分，苹果的另一款名为GarageBand的软件也是采用了相同的音频处理引擎。2011年12月8日，苹果不再提供盒装版的Logic Pro和Logic Express软件，Logic Pro只能从App Store购买，价格位199美元，与先前的Logic Express价格相同。
+		最新版本为Logic Pro X。
+		目录  [隐藏]
+		1	特性
+		2	扩展阅读
+		3	参考资料
+		4	外部链接
+		特性[编辑]
+		Space Designer插件可以模拟各种不同的声学环境，例如尺寸变化的房间，或产生在高山里能听到的回声。Logic Pro能够与MIDI键盘和控制器协同工作（输入和输出）。
+		Logic Pro与Logic Express共用许多功能和同样的界面。Logic Express仅支持2轨道的立体声，而Logic Pro能够处理多轨道的环绕声它们都可以支持最多255个音轨，具体取决于系统性能。
+		Logic Pro以凭借以太网和局域网进行分布式处理功能为特色，一台电脑运行Logic Pro网络中的其他电脑运行Logic node。Logic将向网络中其他的机器进行分载和合成处理。如果以太网足够快（吉比特以太网），Logic可以几乎实时的工作，速度则根据缓冲区的设置和CPU负载。Logic的用户可以凭借Logic Pro的内建插件以及第三方软件把若干个麦金塔电脑的处理能力结合到一起。比起苹果旗舰的12核心Mac Pro上的24个可用线程，Logic可以访问多达16个处理​​线程。
+		下载链接：https://pan.baidu.com/disk/home?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0#list/vmode=list&path=%2FMAC
+	</p>
+
+
+	<h4 id="#Myi">虚拟机技术</h4>
+	<p>
+		产品信息
+		概述
+		Parallels Desktop 12 for Mac 快速、简便、强大，它让开发者、高级用户和其他要求苛刻的专业人士可以在 Mac 上运行 Windows 应用软件。在虚拟机内部运行各种 Windows app，或在不同的操作系统内开发和测试你的 app 或网站。现在，它还包含 Parallels Toolbox。
+		在你需要时，你可以随时访问多种开发者工具，如 Docker、Visual Studio (插件)、Chef、Jenkins 和 Vagrant。Parallels Desktop for Mac 专业版不仅可让用户运行预览 Windows 系统，为 Windows 和 Linux 非注册用户提供嵌套式虚拟环境，还可为需要多种虚拟机环境 (包括较复杂的模拟部署) 的开发者、高级用户和测试者提供理想的资源。
+		任何 app，任何操作系统。
+		同时运行 macOS 和 Windows 10、Windows 8.1、Windows 7、Windows XP、Linux 及其他操作系统。
+		简便易用的虚拟机
+		Parallels Desktop for Mac 简化了创建和管理虚拟机的任务。它可以对虚拟机进行排序，选择自定义图标和色彩，并充分利用模板和关联虚拟机。它甚至还配备省时的软件测试配置文件。
+		专业版特色功能
+		专为开发者而设计，支持 Visual Studio 和多种网络开发工具，包括自定义网络编辑器和不稳定网络模拟器。除 Visual Studio 以外，专业版还支持多种热门工具，如 Vagrant、Chef、Jenkins 等等。
+		Parallels Toolbox for Mac
+		只需支付购买一款 app 的低价，即可获得 Parallels Toolbox for Mac，让你能在 Mac 上快速执行众多日常任务，例如，截图、使用密码保护私人文件、转换 Facebook 或 YouTube 视频等等。无论你是 Mac 还是 Mac Pro 的新用户，你都会爱上这套精心设计的工具和实用程序。
+		下载地址：https://pan.baidu.com/disk/home?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0#list/vmode=list&path=%2FMAC
+	</p>
+	<h4 id="Vps">vps搭载vpn技术</h4>
+	<h4 id="Pcjs">爬虫技术</h4>
+		<p>
+		算是非常基础的了，半小时可以轻松上手，借助相应的软件可以很简单的完成，教程地址：https://www.zhihu.com/question/47883186
+		</p>
+
+
+
+	<h4 id="Alfred">Alfred神兵利器</h4>
+		<p>
+		关于其介绍，增强版的Spotlight,下面放一个个人认为比较不错的教程地址：http://wellsnake.com/jekyll/update/2014/06/15/001/
+		</p>
+
+
+</div>
+<div class="footer shenjunhong-col">
+             <span class="footercontent">jh46666.cn</span>
+         </div>
+         <div id="div2">
+              <img src="../img/0.png">
+              <img src="../img/0.png">
+              :
+              <img src="../img/0.png">
+              <img src="../img/0.png">
+              :
+              <img src="../img/0.png">
+              <img src="../img/0.png">
+
+    </div>
+</body>
+</html>
