@@ -95,7 +95,6 @@
            <script>
               //轮播图
                 function swiper(){
-                console.log('ok');
                 var li=document.getElementById('box').getElementsByTagName("li");  
                 var num=0;  
                 var len=li.length;  
@@ -103,18 +102,13 @@
                         li[num].style.display="none";  
                         num=++num==len?0:num;  
                         li[num].style.display="inline-block";  
-                  
+                        // console.log(num)
                 },3000);//切换时间 
                 // debugger
                 
               }
               
               swiper();
-
-
-               function ok(){
-                console.log('ok')
-              }
            </script>
         </body>
 </body>
