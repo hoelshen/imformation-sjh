@@ -12,6 +12,7 @@
           
        .shenjunhong-col{display: block;max-width: 960px;margin-left: auto;margin-right: auto;}
 
+
 	    .nav{ color:#999999;float: right;margin-left: 40px;font-size: 14px;transition: all 0.15s linear 0s;}
       .nav:hover{color: #6bc5d2}
       .nav-column{padding-top: 20px;}
@@ -43,7 +44,32 @@
       .time{width: 220px;height: 50px;padding-top: 10px;}
       #div2 img{width: 20px;height: 20px;}
 
-     
+      @media screen and (max-width:767px) 
+      {
+      	.shenjunhong-col{text-align: center;}
+      	.shenjunhong-col-1{width: 100%;}
+      	.shenjunhong-col-2{width: 100%;}
+      	.shenjunhong-col-3{width: 100%;}
+      	.shenjunhong-col-4{width: 100%;}
+      	.shenjunhong-col-5{width: 100%;}
+      	.shenjunhong-col-6{width: 100%;}
+      	.shenjunhong-col-7{width: 100%;}
+      	.shenjunhong-col-8{width: 100%;}
+      	.shenjunhong-col-9{width: 100%;}
+      	.shenjunhong-col-10{width: 100%;}
+      	.shenjunhong-col-11{width: 100%;}
+      	.shenjunhong-col-12{width: 100%;}
+        .typographic{display: none;}
+        .photo{display: none}
+        .top{padding-bottom: 80px;}
+        .websitelink{display: none;}
+        .nav{float: none;margin-left: 20px;margin-right: 20px;}
+        .contentblock{margin-left: 40px;margin-right: 40px;min-height: 200px;}
+        .interest{  width: 210px;   padding: 70px;}
+        .box{width:200px;height:200px;overflow: hidden}
+        .box ul{width:200%;left:0;top:0;height:200px}
+        #ul li img{width: 200px;height: 200px;}
+        .box ul li { float: left;}
+        .visiontitle{margin-top: 20px;}
 
-
-      
+      }
