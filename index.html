@@ -18,7 +18,6 @@
             <div class="shenjunhong-col-8 nav-column">
               <a  class="nav" href="#interest">邮件联系</a>
               <a class="nav" href="#vision">愿景</a>
-              <a class="nav" href="#crazyones">至狂想者</a>
             </div>
     
            </div>
@@ -55,15 +54,23 @@
            <!-- 这里是願景結束-->
         
           <div class="interest contackblock shenjunhong-col">
-              <img src="./img/JS.jpg">
-              <img src="./img/HTML5.jpg">
-              <img src="./img/css3.jpg" >
+            <div id="box" class="box">
+              <ul id="ul">
+                <li> <img src="./img/JS.jpg"></li>
+                <li> <img src="./img/HTML5.jpg"></li>
+                <li> <img src="./img/css3.jpg" ></li>
+              </ul>
+              <!-- <ol id="ol">
+                <li class="current">1</li>
+                <li>2</li>
+                <li>3</li>
+              </ol> -->
+            </div> 
           </div>
     
     
            <!-- 对课程感兴趣開始-->
-            <div  class="interest contackblock shenjunhong-col">
-                  <span class="footercontent">
+            <div  class=" time shenjunhong-col">
                      <div id="div2">
                         <img src="./img/0.jpg">
                         <img src="./img/0.jpg">
@@ -74,7 +81,6 @@
                         <img src="./img/0.jpg">
                         <img src="./img/0.jpg">
                       </div>
-                 </span>
             </div>
            <!-- 对课程感兴趣開始-->   
     
@@ -85,6 +91,31 @@
            
            <!-- 页脚開始-->
            
+
+           <script>
+              //轮播图
+                function swiper(){
+                console.log('ok');
+                var li=document.getElementById('box').getElementsByTagName("li");  
+                var num=0;  
+                var len=li.length;  
+                setInterval(function(){  
+                        li[num].style.display="none";  
+                        num=++num==len?0:num;  
+                        li[num].style.display="inline-block";  
+                  
+                },3000);//切换时间 
+                // debugger
+                
+              }
+              
+              swiper();
+
+
+               function ok(){
+                console.log('ok')
+              }
+           </script>
         </body>
 </body>
 </html>

@@ -1,18 +1,21 @@
 
 
-    function changeMouse(){
-      var oDiv=document.getElementById('div2');
+    // function changeMouse(){
+    //   var oDiv=document.getElementById('div2');
 
-      oDiv.onmouseover=function()
-      {
-        startMove(0);
-      };
-      oDiv.onmouseout=function()
-      {
-        startMove(-150);
-      }
-    }
+    //   oDiv.onmouseover=function()
+    //   {
+    //     startMove(0);
+    //   };
+    //   oDiv.onmouseout=function()
+    //   {
+    //     startMove(-150);
+    //   }
+    // }
  
+
+
+
 
     var timer=null;
     function startMove(iTarget){
@@ -53,7 +56,7 @@
     }
 
 
-
+  //更换时间
 function changeImg(){
       var div2 = document.getElementById('div2')
       var aImg=div2.getElementsByTagName('img')
@@ -115,4 +118,4 @@ function addLoadEvent(func){
 
 
 addLoadEvent(changeImg);;
-addLoadEvent(changeMouse);
+// addLoadEvent(swiper);
