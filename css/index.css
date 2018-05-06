@@ -32,7 +32,7 @@
       .slogan{font-size: 36px;color: #ffffff;}
       .introduction{color: #177c8a;margin-top: 20px;}
       .call{color: #ffffff;font-size: 18px;padding: 10px 30px;border: 1px solid #ffffff;border-radius: 5px;margin-top: 30px;display: inline-block;}
-      .call:hover{rgba(255,255,255,0.2)}
+      .call:hover{color:rgba(255,255,255,0.2);}
       .contain{width: 940px;margin-left: auto;margin-right: auto;}
       .poemititle{color: #f14e42;font-size: 24px;margin-bottom: 30px;text-align: left;}
       .poemcontent{color:#6f6f70;line-height: 25px;display: inline-block;text-align: left;}
