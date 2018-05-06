@@ -42,33 +42,37 @@
         },30)
     }
  
-
- function toDou(n){
-    if(n<10)
-    {
-      return '0'+n;
+    function toDou(n){
+      if(n<10){
+        return '0' +n;
+      }
+      else{
+        return ''+n;
+      }
+  
     }
-    else
-    {
-      return ''+n;
-    }
 
-  }
 
 
 function changeImg(){
-      var aImg=document.getElementsByTagName('img')
+      var div2 = document.getElementById('div2')
+      var aImg=div2.getElementsByTagName('img')
       function tick()
       {
       var oDate=new Date();
+      // console.log(oDate.getHours())
+      // console.log(oDate.getMinutes())
 
+      // console.log(oDate.getSeconds())
+      
       var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
-
+      // console.log(str);
+      // console.log(str.charAt(i))
        // alert(str);
-
       for (var i = 0; i < aImg.length; i++)
       {
-        aImg[i].src='../img/'+str.charAt(i)+'.jpg';
+        aImg[i].src='./img/' +str.charAt(i)+ '.jpg';
+        
       }
 
       }

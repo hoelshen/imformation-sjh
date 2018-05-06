@@ -40,7 +40,8 @@
       .visioncontent{color: #6f6f70;line-height: 25px;}
       .contentblock{padding-bottom: 60px;padding-top: 60px;border-bottom: 1px solid #e5e5e5;text-align: center;min-height: 300px;}
       .photo{width: 600px;float: left;margin-left: 70px;padding-right: 30px;margin-top: 40px; }
-      .contackblock{padding-top: 130px;padding-bottom: 130px;text-align: center;}
+      .contackblock{padding-top: 130px;padding-bottom: 130px;text-align: center;width: 400px;height: 400px;}
+      .contackblock img{overflow: hidden;}
       .containtitle{font-size: 24px;color: #6f6f70;}
       .email{font-size: 18px;background: #6bc5d2;padding: 10px 40px;color: #ffffff;border-radius: 5px;margin-top: 20px;display: inline-block;transition: all 0.15s linear 0s;}
       .email:hover{background-color: #73d4e2;}
