@@ -1,0 +1,190 @@
+body {
+    background-color: #fff;
+}
+
+.main{
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;	
+}
+
+.left{
+	display: -webkit-flex; 
+	display: flex;
+	align-items:  center;
+	min-height: 100vh;
+	flex:1;
+
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;	
+  
+  	background: url(http://coding.imweb.io/img/project/resume/bg.png)	#1E90FF ;
+	color: white;
+	}
+
+
+.info,.contact,.details{
+	padding-top: 30px;
+	padding:20px;
+}
+
+
+.info-img{
+	width:100px;
+	height:100px;
+	background-image: url(http://coding.imweb.io/img/project/resume/avatar.png);
+	background-position: center;
+	background-size: 100px 100px;
+    background-repeat: no-repeat;
+	border-radius:50px;
+	border:1px solid #6495ED;
+ 	background-color: white;
+ 	box-shadow:0px 0px 20px #6395ED;
+ 	margin:auto;
+ 	padding-left:25px; 
+
+}
+.info-img+p{padding: 20px 0 20px 60px;}
+
+.info-img:hover{
+	animation-name: twinkling;
+	animation-duration: 1.5s;
+    animation-iteration-count: 1;
+   	animation-delay: 1s;
+}
+
+.contact ul a{
+	  color:#fff;
+	  padding-left: 10px;
+}
+
+.details-ul{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+}
+
+.details-ul  li{
+	flex-basis:50%; 
+}
+
+.right{
+	width: 50%;
+  	min-height: 100vh;
+}
+
+.work{
+	padding:0 20px 0px;
+}
+.work-title,.skill-title{
+	background: linear-gradient(to right,#ccc 90%, rgba(0,0,0,0) 91%) no-repeat center/100% 1px;
+	margin:20px;
+}
+.work-title h2,.skill-title h2{
+	background:#fff;
+    width: 100px;
+  	color: #1E90FF;
+  	margin: 0 auto;
+  	text-align: center;
+}
+.work-list {
+	background: linear-gradient(to bottom,#ccc 90%, rgba(0,0,0,0) 91%) no-repeat left top/1px 100%;
+}
+
+.work-list li{
+	padding:0 15px;	
+}
+.work-list li::before{
+  position:relative;
+  left: -20px;
+  top:12px;
+  content:"";
+  display:block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #188eee;
+  box-shadow:0px 0px 20px #6395ED;
+}
+.work-list li:hover::before{
+	animation:twinkling 1s ease 1;
+}
+@keyframes twinkling{ 
+	from{
+ 	box-shadow: 0 0 5px 0 #fff;
+	}
+	to{
+	box-shadow: 0 0 10px 5px #fff;
+	} 
+}
+.skill ul,.skill li{
+	padding:4% 5%;
+}
+.color-eee{
+	color: #C0C0C0;
+}
+.sp{
+	border: 1px solid #eee;
+	padding:1px 5px;
+	border-radius: 25%;
+	float: right;
+	position: relative;
+	top: -40px;
+}
+.box{
+	border-radius: 10px;
+	width: 100%;
+    height: 5%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 10px 5px;
+    left: 5px;
+    clear: both;
+    transition: transform 3s;
+}
+
+.ps-plane{height: 5px;background:linear-gradient(to right ,#1888ee ,#00bfff 30%,  #eee 50%) no-repeat;background-size:100% 5px;}
+.html-plane{height: 5px;background:linear-gradient(to right ,#1888ee ,#00bfff 70%,  #eee 90%) no-repeat;background-size:100% 5px;}
+.js-plane{height: 5px;background:linear-gradient(to right ,#1888ee ,#00bfff 50%,  #eee  70%) no-repeat;background-size:100% 5px;}
+.ps:hover .ps-plane,.html:hover .html-plane,.js:hover .js-plane{
+	 animation: progress 1s ease-out 1;
+}
+
+
+ .ps-plane {
+            width: 100%;
+        }
+
+ .html-plane {
+            width: 100%;
+        }
+
+.js-plane {
+           width: 100%;
+        }
+
+ @keyframes progress {
+    from {
+        width: 0;
+     }
+ }
+
+
+@media (max-width: 977px ) and (max-width: 768px) {
+    .main {
+        display: flex;
+    }
+    .info{	
+		left: 20%;
+		top: 20%;
+		padding: 20px;
+	}
+    .right {
+    	width: 100%;   
+    }
+   
+}
+
