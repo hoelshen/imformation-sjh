@@ -1,139 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    
-    <!-- <link rel="stylesheet" type="text/css" href="./css/index.css"> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- <link rel="stylesheet" type="text/css" href="./css/bg.css"> -->
-    
-    <style>
-      /* 标签样式初始化 */
-      body{margin:10px;
-        padding:10px;background:#fff;font-size:16px;
-        font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'
+  <!-- <link rel="stylesheet" type="text/css" href="./css/index.css"> -->
+
+  <!-- <link rel="stylesheet" type="text/css" href="./css/bg.css"> -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132782526-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-132782526-1', {
+      'optimize_id': 'GTM-MH84C2M'
+    });
+  </script>
+
+  <style>
+    /* 标签样式初始化 */
+    body {
+      margin: 10px;
+      padding: 10px;
+      background: #fff;
+      font-size: 16px;
+      font-family: Arial, Helvetica, 'STHeiti', 'Microsoft YaHei', 'sans-serif'
+    }
+
+    form,
+    ul,
+    li,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul,
+    li {
+      list-style-type: none;
+    }
+
+    a {
+      color: #00007F;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    /* 自定义样式 */
+
+
+    .shenjunhong-col {
+      display: block;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .nav {
+      color: #999999;
+      float: right;
+      margin-left: 40px;
+      font-size: 14px;
+      transition: all 0.15s linear 0s;
+    }
+
+    .nav:hover {
+      color: #6bc5d2
+    }
+
+    .nav-column {
+      padding-top: 20px;
+    }
+
+    .websitelink {
+      color: #999999;
+      vertical-align: top;
+      font-size: 20px;
+      float: left
+    }
+
+    .top {
+      padding-top: -20px;
+      padding-bottom: 50px;
+    }
+
+    .banner {
+      background: #6bc5d2;
+      padding-bottom: 200px;
+      padding-top: 150px;
+    }
+
+    .typographic {
+      font-size: 400px;
+      color: #ffffff;
+      letter-spacing: -20px;
+      float: left;
+      margin-top: -150px;
+      padding-right: 40px;
+      margin-left: 10px;
+    }
+
+    .slogan {
+      font-size: 36px;
+      color: #ffffff;
+    }
+
+    .introduction {
+      color: #177c8a;
+      margin-top: 20px;
+    }
+
+    .call {
+      color: #ffffff;
+      font-size: 18px;
+      padding: 10px 30px;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      margin-top: 30px;
+      display: inline-block;
+    }
+
+    .call:hover {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .contain {
+      width: 940px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .poemititle {
+      color: #f14e42;
+      font-size: 24px;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .poemcontent {
+      color: #6f6f70;
+      line-height: 25px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .visiontitle {
+      color: #f14e42;
+      font-size: 24px;
+      margin-bottom: 30px;
+      margin-top: 40px;
+    }
+
+    .visioncontent {
+      color: #6f6f70;
+      line-height: 25px;
+    }
+
+    .contentblock {
+      padding-bottom: 60px;
+      padding-top: 60px;
+      border-bottom: 1px solid #e5e5e5;
+      text-align: center;
+      min-height: 300px;
+    }
+
+    .photo {
+      width: 600px;
+      float: left;
+      margin-left: 70px;
+      padding-right: 30px;
+      margin-top: 40px;
+    }
+
+    .contackblock {
+      text-align: center;
+      width: 500px;
+      height: 500px;
+    }
+
+    .box {
+      width: 500px;
+      height: 500px;
+      overflow: hidden
+    }
+
+    .box ul {
+      width: 600%;
+      left: 0;
+      top: 0;
+      height: 500px
+    }
+
+    .box ul li {
+      float: left;
+    }
+
+    #ul li img {
+      width: 500px;
+      height: 500px;
+    }
+
+    .containtitle {
+      font-size: 24px;
+      color: #6f6f70;
+    }
+
+    .email {
+      font-size: 18px;
+      background: #6bc5d2;
+      padding: 10px 40px;
+      color: #ffffff;
+      border-radius: 5px;
+      margin-top: 20px;
+      display: inline-block;
+      transition: all 0.15s linear 0s;
+    }
+
+    .email:hover {
+      background-color: #73d4e2;
+    }
+
+    .footer {
+      padding: 35px 0;
+      background: #f3f3f3;
+      text-align: center;
+      border-top: 1px solid #e3e3e3;
+    }
+
+    .footercontent {
+      color: #bfbfbf;
+    }
+
+    .time {
+      width: 220px;
+      height: 50px;
+      padding-top: 10px;
+    }
+
+    #div2 img {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media screen and (max-width:767px) {
+      .shenjunhong-col {
+        text-align: center;
       }
-      form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
-      ul,li{list-style-type:none;}
-      a{color:#00007F;text-decoration:none;}
-      a:hover{text-decoration:none;}
-/* 自定义样式 */ 
 
-          
-       .shenjunhong-col{display: block;max-width: 960px;margin-left: auto;margin-right: auto;}
-
-	    .nav{ color:#999999;float: right;margin-left: 40px;font-size: 14px;transition: all 0.15s linear 0s;}
-      .nav:hover{color: #6bc5d2}
-      .nav-column{padding-top: 20px;}
-	    .websitelink{ color: #999999;vertical-align:top;font-size: 20px;float: left }
-	    .top{padding-top:-20px;padding-bottom: 50px;}
-      .banner{background: #6bc5d2;padding-bottom: 200px;padding-top: 150px;}
-      .typographic{font-size:400px;color: #ffffff;letter-spacing: -20px;float: left;margin-top: -150px;padding-right: 40px;margin-left: 10px;}
-      .slogan{font-size: 36px;color: #ffffff;}
-      .introduction{color: #177c8a;margin-top: 20px;}
-      .call{color: #ffffff;font-size: 18px;padding: 10px 30px;border: 1px solid #ffffff;border-radius: 5px;margin-top: 30px;display: inline-block;}
-      .call:hover{color:rgba(255,255,255,0.2);}
-      .contain{width: 940px;margin-left: auto;margin-right: auto;}
-      .poemititle{color: #f14e42;font-size: 24px;margin-bottom: 30px;text-align: left;}
-      .poemcontent{color:#6f6f70;line-height: 25px;display: inline-block;text-align: left;}
-      .visiontitle{color: #f14e42;font-size: 24px;margin-bottom: 30px;margin-top: 40px;}
-      .visioncontent{color: #6f6f70;line-height: 25px;}
-      .contentblock{padding-bottom: 60px;padding-top: 60px;border-bottom: 1px solid #e5e5e5;text-align: center;min-height: 300px;}
-      .photo{width: 600px;float: left;margin-left: 70px;padding-right: 30px;margin-top: 40px; }
-      .contackblock{text-align: center;width: 500px;height: 500px;}
-      .box{width:500px;height:500px;overflow: hidden}
-      .box ul{width:600%;left:0;top:0;height:500px}
-      .box ul li { float: left;}
-      #ul li img{width: 500px;height: 500px;}
-      .containtitle{font-size: 24px;color: #6f6f70;}
-      .email{font-size: 18px;background: #6bc5d2;padding: 10px 40px;color: #ffffff;border-radius: 5px;margin-top: 20px;display: inline-block;transition: all 0.15s linear 0s;}
-      .email:hover{background-color: #73d4e2;}
-      .footer{padding: 35px 0;background: #f3f3f3;text-align: center;border-top: 1px solid #e3e3e3;}
-      .footercontent{color: #bfbfbf;}
-      .time{width: 220px;height: 50px;padding-top: 10px;}
-      #div2 img{width: 20px;height: 20px;}
-
-      @media screen and (max-width:767px) 
-      {
-      	.shenjunhong-col{text-align: center;}
-      	.shenjunhong-col-1{width: 100%;}
-      	.shenjunhong-col-2{width: 100%;}
-      	.shenjunhong-col-3{width: 100%;}
-      	.shenjunhong-col-4{width: 100%;}
-      	.shenjunhong-col-5{width: 100%;}
-      	.shenjunhong-col-6{width: 100%;}
-      	.shenjunhong-col-7{width: 100%;}
-      	.shenjunhong-col-8{width: 100%;}
-      	.shenjunhong-col-9{width: 100%;}
-      	.shenjunhong-col-10{width: 100%;}
-      	.shenjunhong-col-11{width: 100%;}
-      	.shenjunhong-col-12{width: 100%;}
-        .typographic{display: none;}
-        .photo{display: none}
-        .top{padding-bottom: 80px;}
-        .websitelink{display: none;}
-        .nav{float: none;margin-left: 20px;margin-right: 20px;}
-        .contentblock{margin-left: 40px;margin-right: 40px;min-height: 200px;}
-        .interest{  width: 210px;   padding: 70px;}
-        .box{width:200px;height:200px;overflow: hidden}
-        .box ul{width:200%;left:0;top:0;height:200px}
-        #ul li img{width: 200px;height: 200px;}
-        .box ul li { float: left;}
-        .visiontitle{margin-top: 20px;}
-
+      .shenjunhong-col-1 {
+        width: 100%;
       }
-    </style>
-    <script src="js/index.js">
 
-    </script>
-    <title>sjh</title>
+      .shenjunhong-col-2 {
+        width: 100%;
+      }
+
+      .shenjunhong-col-3 {
+        width: 100%;
+      }
+
+      .shenjunhong-col-4 {
+        width: 100%;
+      }
+
+      .shenjunhong-col-5 {
+        width: 100%;
+      }
+
+      .shenjunhong-col-6 {
+        width: 100%;
+      }
+
+      .shenjunhong-col-7 {
+        width: 100%;
+      }
+
+      .shenjunhong-col-8 {
+        width: 100%;
+      }
+
+      .shenjunhong-col-9 {
+        width: 100%;
+      }
+
+      .shenjunhong-col-10 {
+        width: 100%;
+      }
+
+      .shenjunhong-col-11 {
+        width: 100%;
+      }
+
+      .shenjunhong-col-12 {
+        width: 100%;
+      }
+
+      .typographic {
+        display: none;
+      }
+
+      .photo {
+        display: none
+      }
+
+      .top {
+        padding-bottom: 80px;
+      }
+
+      .websitelink {
+        display: none;
+      }
+
+      .nav {
+        float: none;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .contentblock {
+        margin-left: 40px;
+        margin-right: 40px;
+        min-height: 200px;
+      }
+
+      .interest {
+        width: 210px;
+        padding: 70px;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        overflow: hidden
+      }
+
+      .box ul {
+        width: 200%;
+        left: 0;
+        top: 0;
+        height: 200px
+      }
+
+      #ul li img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .box ul li {
+        float: left;
+      }
+
+      .visiontitle {
+        margin-top: 20px;
+      }
+
+    }
+  </style>
+  <script src="js/index.js">
+
+  </script>
+  <title>sjh</title>
 </head>
+
 <body>
-    <body>
-        <!-- 这里是标题栏开始-->
-          <div class="top shenjunhong-col">
-            <div class="shenjunhong-col-4">
-              <span class="websitelink">jh46666.cn</span>
-            </div>
-            <div class="shenjunhong-col-8 nav-column">
-              <a  class="nav" href="#interest">邮件联系</a>
-              <a class="nav" href="#vision">愿景</a>
-            </div>
-           </div>
-           <!-- 这里是标题栏结束-->
-    
-    
-           <!-- 这里是广告栏开始-->
-           <div class="banner ">
-              <div class=" shenjunhong-col">
-                  <span class="typographic">web</span>
-                  <h2 class="slogan"></h2>
-                   <a class="call"  a href="./resume/resume.html">查看简历</a>
-              </div>
-           </div>
-           <!-- 这里是广告栏结束-->
-          
-    
-    
-    
-           <!-- 这里是向狂想者致敬开始-->
-           <div id="vision" class="contentblock shenjunhong-col">
-              <h2  class="visiontitle">个人願景</h2>
-            <p class="visioncontent">做人如果没有梦想,跟咸鱼有什么区别</p> 
-           </div>
-          <!-- 这里是向狂想者致敬結束-->
-    
-    
-    
-           <!-- 这里是願景開始-->
-           <div id="interest" class=" contentblock shenjunhong-col">
-             <h2 class="containtitle">对我感兴趣</h2>
-             <a class="email" href="mailto:1039460820@qq.com">邮件联系</a>
-           </div>
-           <!-- 这里是願景結束-->
-        
-          <!-- <div class="interest contackblock shenjunhong-col">
+
+  <body>
+    <!-- 这里是标题栏开始-->
+    <div class="top shenjunhong-col">
+      <div class="shenjunhong-col-4">
+        <span class="websitelink">jh46666.cn</span>
+      </div>
+      <div class="shenjunhong-col-8 nav-column">
+        <a class="nav" href="#interest">邮件联系</a>
+        <a class="nav" href="#vision">愿景</a>
+      </div>
+    </div>
+    <!-- 这里是标题栏结束-->
+
+
+    <!-- 这里是广告栏开始-->
+    <div class="banner ">
+      <div class=" shenjunhong-col">
+        <span class="typographic">web</span>
+        <h2 class="slogan"></h2>
+        <a class="call" a href="./resume/resume.html">查看简历</a>
+      </div>
+    </div>
+    <!-- 这里是广告栏结束-->
+
+
+
+
+    <!-- 这里是向狂想者致敬开始-->
+    <div id="vision" class="contentblock shenjunhong-col">
+      <h2 class="visiontitle">个人願景</h2>
+      <p class="visioncontent">做人如果没有梦想,跟咸鱼有什么区别</p>
+    </div>
+    <!-- 这里是向狂想者致敬結束-->
+
+
+
+    <!-- 这里是願景開始-->
+    <div id="interest" class=" contentblock shenjunhong-col">
+      <h2 class="containtitle">对我感兴趣</h2>
+      <a class="email" href="mailto:1039460820@qq.com">邮件联系</a>
+    </div>
+    <!-- 这里是願景結束-->
+
+    <!-- <div class="interest contackblock shenjunhong-col">
             <div id="box" class="box">
               <ul id="ul">
                 <li> <img src="./img/JS.jpg"></li>
@@ -142,32 +431,32 @@
               </ul>
             </div> 
           </div> -->
-    
-    
-           <!-- 对课程感兴趣開始-->
-            <div  class=" time shenjunhong-col">
-                     <div id="div2">
-                        <img src="./img/0.jpg">
-                        <img src="./img/0.jpg">
-                        :
-                        <img src="./img/0.jpg">
-                        <img src="./img/0.jpg">
-                        :
-                        <img src="./img/0.jpg">
-                        <img src="./img/0.jpg">
-                      </div>
-            </div>
-           <!-- 对课程感兴趣開始-->   
-    
-           <!-- 页脚開始-->
-             <div class="footer shenjunhong-col">
-                <p>jh46666.cn</p>
-             </div>
-           
-           <!-- 页脚開始-->
-           
 
-           <!-- <script>
+
+    <!-- 对课程感兴趣開始-->
+    <div class=" time shenjunhong-col">
+      <div id="div2">
+        <img src="./img/0.jpg">
+        <img src="./img/0.jpg">
+        :
+        <img src="./img/0.jpg">
+        <img src="./img/0.jpg">
+        :
+        <img src="./img/0.jpg">
+        <img src="./img/0.jpg">
+      </div>
+    </div>
+    <!-- 对课程感兴趣開始-->
+
+    <!-- 页脚開始-->
+    <div class="footer shenjunhong-col">
+      <p>jh46666.cn</p>
+    </div>
+
+    <!-- 页脚開始-->
+
+
+    <!-- <script>
               //轮播图
                 function swiper(){
                 var li=document.getElementById('box').getElementsByTagName("li");  
@@ -185,6 +474,7 @@
               
               swiper();
            </script> -->
-        </body>
+  </body>
 </body>
+
 </html>
